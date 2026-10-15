@@ -1,0 +1,20 @@
+# Packages imported by notebooks/CRNN.ipynb, notebooks/dataanalysis.ipynb and notebooks/utils.py.
+# The saved notebook outputs were produced with Python 3.11.
+#
+# pydub needs the ffmpeg program to read and write audio files.
+# Install it separately, e.g. `sudo apt install ffmpeg`, `brew install ffmpeg`
+# or `winget install ffmpeg`, and make sure it is on your PATH.
+
+# TensorFlow 2.16+ ships Keras 3, which the notebooks use
+# (".weights.h5" checkpoint names, keras.metrics.F1Score).
+tensorflow>=2.16
+keras>=3.0
+librosa
+pydub
+scikit-learn
+numpy
+matplotlib
+ipython
+
+# pydub imports the audioop module, which was removed from Python 3.13.
+audioop-lts; python_version >= "3.13"
